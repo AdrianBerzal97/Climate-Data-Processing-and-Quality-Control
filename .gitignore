@@ -1,0 +1,22 @@
+# Local downloads and generated outputs
+outputs/
+data/
+netcdf/
+*.nc
+*.nc4
+*.grib
+*.grb
+*.xlsx
+*.xls
+*.csv
+# Credentials and local R session
+.Renviron
+.env
+.env.*
+!.env.example
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.DS_Store
+Thumbs.db
