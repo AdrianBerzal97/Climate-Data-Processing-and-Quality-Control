@@ -40,6 +40,12 @@ The following screenshot was supplied by the repository author and shows an AEME
 
 ![AEMET daily meteorological data worksheet, Buitrago del Lozoya](docs/Resultado_AEMET_Clima.PNG)
 
+## Daily ET0 time-series figure (2024–2025)
+
+The following author-provided figure displays daily reference evapotranspiration (ET0) series labelled Ciudad Rodrigo, Muñogalindo and Zarza de Granadilla for 2024–2025. The figure itself states its source as "datos diarios facilitados"; the specific provider, calculation method and reuse conditions have **not yet been independently confirmed**. It is therefore shown as a supplied figure, not as independently validated SiAR results.
+
+![Daily ET0 time-series figure for Ciudad Rodrigo, Muñogalindo and Zarza de Granadilla, 2024–2025](docs/Gr%C3%A1ficas%20de%20ET0%202024%E2%80%932025%20por%20localidad.png)
+
 ## Related repositories
 
 - [SIMPAST grassland climate model](https://github.com/AdrianBerzal97/Mediterranean-grassland-climate-model)
