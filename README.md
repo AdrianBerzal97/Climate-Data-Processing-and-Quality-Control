@@ -34,6 +34,12 @@ Rscript src/visualization/plot_rocio_grid.R outputs/synthetic/rocio_grid.png
 
 The time-series plot script requires unique dates, so resolve the deliberate duplicate in the synthetic fixture before plotting. The map uses an **invented illustrative grid**, not actual ROCIO raster cells. Original datasets and authenticated API responses have not been tested in this environment.
 
+## AEMET output example
+
+The following screenshot was supplied by the repository author and shows an AEMET daily meteorological data worksheet for Buitrago del Lozoya (station code 3110C), with workbook tabs for Colmenar Viejo and Aranjuez. It illustrates the output format; it does not establish data completeness, validation or permission to redistribute the underlying dataset.
+
+![AEMET daily meteorological data worksheet, Buitrago del Lozoya](docs/Resultado_AEMET_Clima.PNG)
+
 ## Related repositories
 
 - [SIMPAST grassland climate model](https://github.com/AdrianBerzal97/Mediterranean-grassland-climate-model)
