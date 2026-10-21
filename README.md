@@ -17,6 +17,23 @@ Configure AEMET_API_KEY and SIAR_TOKEN as local environment variables where need
 
 The code is provided as portfolio examples and has not been verified end-to-end with original datasets or authenticated API calls. The ROCIO and SiAR workflows are independent CEIGRAM-related work, not automatically part of the doctoral analyses.
 
+## Quality-control demonstration (synthetic data)
+
+The repository includes a [workflow diagram](docs/workflow.md), a [daily QC report generator](src/quality_control/daily_qc.R), a [temporal diagnostic plot script](src/visualization/plot_daily_diagnostics.R), an [illustrative ROCIO nearest-cell map script](src/visualization/plot_rocio_grid.R), and [synthetic reproducibility tests](tests/test_daily_qc.R).
+
+The [example QC table](docs/synthetic_example.md) uses an intentionally artificial seven-day series. It illustrates detection of missing dates, duplicate dates and missing values, **not real climate results**.
+
+From the repository root, with R installed:
+
+```bash
+Rscript tests/test_daily_qc.R
+Rscript tests/generate_synthetic_data.R outputs/synthetic/daily.csv
+Rscript src/quality_control/daily_qc.R outputs/synthetic/daily.csv outputs/synthetic/qc.csv
+Rscript src/visualization/plot_rocio_grid.R outputs/synthetic/rocio_grid.png
+```
+
+The time-series plot script requires unique dates, so resolve the deliberate duplicate in the synthetic fixture before plotting. The map uses an **invented illustrative grid**, not actual ROCIO raster cells. Original datasets and authenticated API responses have not been tested in this environment.
+
 ## Related repositories
 
 - [SIMPAST grassland climate model](https://github.com/AdrianBerzal97/Mediterranean-grassland-climate-model)
